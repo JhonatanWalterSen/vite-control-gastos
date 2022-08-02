@@ -8,6 +8,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal, guardarGasto }) => {
     const [nombre, setNombre] = useState('')
     const [cantidad, setCantidad] = useState('')
     const [categoria, setCategoria] = useState('')
+    
     const ocultarModal = ()=>{
 
         setAnimarModal(false)
@@ -15,6 +16,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal, guardarGasto }) => {
             setModal(false)
         },500)
     }
+
     const handleSubmit = (e)=>{
         e.preventDefault()
         console.log('enviado datos del form');
@@ -57,6 +59,7 @@ const Modal = ({ setModal, animarModal, setAnimarModal, guardarGasto }) => {
                         <option value="casa">Casa</option>
                         <option value="gastos">Gastos varios</option>
                         <option value="ocio">Ocio</option>
+                        <option value="salud">Salud</option>
                         <option value="suscripciones">Suscripciones</option>
 
                     </select>
